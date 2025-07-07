@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGODB_URI =
-  "mongodb+srv://shopifyFbt:xHYfyF39HRlINOZh@clusterfbt.ppfu2ha.mongodb.net";
+const MONGODB_URI = "mongodb://localhost:27017/frequently_bought";
 
 // = = = = = = = = = = = = Adding billing table on mongodb = = = = = = = = = = = = //
 const billingSchema = new mongoose.Schema({
