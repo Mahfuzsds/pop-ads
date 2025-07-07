@@ -1,6 +1,4 @@
 import { createRequestHandler } from "@remix-run/vercel";
+import * as build from "./build/server/index.js"; // Adjust if needed
 
-export default createRequestHandler({
-  build: await import("./build/server/index.js"),
-  mode: process.env.NODE_ENV,
-});
+export default createRequestHandler({ build });
