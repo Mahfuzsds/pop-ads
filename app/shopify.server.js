@@ -10,7 +10,11 @@ import { restResources } from "@shopify/shopify-api/rest/admin/2024-04";
 import connectToMongoDB from "./db.server";
 import { MongoDBSessionStorage } from "@shopify/shopify-app-session-storage-mongodb"; // Hypothetical package, check for actual availability or implement custom logic
 
-await connectToMongoDB();
+async function init() {
+  await connectToMongoDB();
+}
+
+init();
 
 export const MONTHLY_PLAN = "Monthly subscription";
 export const ANNUAL_PLAN = "Annual subscription";
