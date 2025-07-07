@@ -3,7 +3,7 @@
 client_id = "7a720f5dc820c5b540b11077719f83c6"
 name = "pop-ads"
 handle = "pop-ads"
-application_url = "https://jet-fridge-hiring-eagles.trycloudflare.com"
+application_url = "https://pop-ads.vercel.app"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://jet-fridge-hiring-eagles.trycloudflare.com/auth/callback",
-  "https://jet-fridge-hiring-eagles.trycloudflare.com/auth/shopify/callback",
-  "https://jet-fridge-hiring-eagles.trycloudflare.com/api/auth/callback"
+  "https://pop-ads.vercel.app/auth/callback",
+  "https://pop-ads.vercel.app/auth/shopify/callback",
+  "https://pop-ads.vercel.app/api/auth/callback"
 ]
 
 [webhooks]
