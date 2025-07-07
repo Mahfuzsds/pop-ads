@@ -3,7 +3,7 @@
 client_id = "7a720f5dc820c5b540b11077719f83c6"
 name = "pop-ads"
 handle = "pop-ads"
-application_url = "https://pop-ads.vercel.app"
+application_url = "https://pop-ads.vercel.app/"
 embedded = true
 
 [build]
