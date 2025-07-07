@@ -53,8 +53,8 @@ export default defineConfig({
   },
   plugins: [
     remix({
-      presets: [vercelPreset()],
       ignoredRouteFiles: ["**/.*"],
+      presets: [vercelPreset()],
       future: {
         v3_fetcherPersist: true,
         v3_relativeSplatPath: true,
