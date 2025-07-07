@@ -17,8 +17,8 @@
       "dest": "/build/client/assets/$1"
     },
     {
-      "src": "/(.*)",
-      "dest": "/build/server.js"
+      "src": "/.*",
+      "dest": "server.js"
     }
   ]
 }
