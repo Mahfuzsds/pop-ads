@@ -1,11 +1,29 @@
-import { PrismaClient } from "@prisma/client";
+import mongoose from "mongoose";
 
-if (process.env.NODE_ENV !== "production") {
-  if (!global.prismaGlobal) {
-    global.prismaGlobal = new PrismaClient();
+const MONGODB_URI =
+  process.env.MONGODB_LIVE_URI || "mongodb://localhost:27017/frequently_bought";
+
+// = = = = = = = = = = = = Adding billing table on mongodb = = = = = = = = = = = = //
+const billingSchema = new mongoose.Schema({
+  shopDomain: String,
+  subcriptionId: String,
+  createdAt: { type: Date, default: Date.now },
+});
+
+// var billingModel = mongoose.model("BIlling", billingSchema);
+
+const connectToMongoDB = async () => {
+  if (mongoose.connection.readyState >= 1) {
+    return;
   }
-}
 
-const prisma = global.prismaGlobal ?? new PrismaClient();
+  try {
+    await mongoose.connect(MONGODB_URI);
+    console.log("Connected to MongoDB");
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+    throw error;
+  }
+};
 
-export default prisma;
+export default connectToMongoDB;
