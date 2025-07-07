@@ -1,7 +1,6 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
-  "devCommand": "npm run start",
   "framework": null,
   "outputDirectory": "build/client",
   "routes": [
