@@ -3,11 +3,11 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "framework": null,
-  "outputDirectory": "build/server",
+  "outputDirectory": "build/client",
   "routes": [
     {
       "src": "/.*",
-      "dest": "build/server/index.js"
+      "dest": "build/server/"
     }
   ]
 }
