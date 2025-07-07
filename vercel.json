@@ -1,8 +1,8 @@
 {
   "version": 2,
   "buildCommand": "npm run build",
-  "framework": "vite",
-  "outputDirectory": "build/server",
+  "framework": null,
+  "outputDirectory": "build/client",
   "routes": [
     {
       "src": "/.*",
