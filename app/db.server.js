@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
-const MONGODB_URI = "mongodb://localhost:27017/frequently_bought";
+const MONGODB_URI =
+  "mongodb+srv://itssonicx:Fn5U4lZ1QDPgUfhD@popcluster.e0deehd.mongodb.net/?retryWrites=true&w=majority&appName=PopCluster";
 
 // = = = = = = = = = = = = Adding billing table on mongodb = = = = = = = = = = = = //
 const billingSchema = new mongoose.Schema({
