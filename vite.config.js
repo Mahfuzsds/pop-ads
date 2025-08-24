@@ -54,7 +54,7 @@ export default defineConfig({
   plugins: [
     remix({
       ignoredRouteFiles: ["**/.*"],
-      presets: [vercelPreset()],
+      presets: [vercelPreset({ assetsBuildDirectory: "public/build" })],
       future: {
         v3_fetcherPersist: true,
         v3_relativeSplatPath: true,
@@ -67,6 +67,8 @@ export default defineConfig({
     tsconfigPaths(),
   ],
   build: {
+    outDir: "public/build",
+    assetsDir: "assets",
     assetsInlineLimit: 0,
   },
   optimizeDeps: {
