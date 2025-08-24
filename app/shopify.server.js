@@ -28,7 +28,7 @@ const shopify = shopifyApp({
   authPathPrefix: "/auth",
   sessionStorage: new MongoDBSessionStorage(
     new URL(
-      "mongodb+srv://itssonicx:Fn5U4lZ1QDPgUfhD@popcluster.e0deehd.mongodb.net/?retryWrites=true&w=majority&appName=PopCluster",
+      "mongodb+srv://superuser:khuljasimsim@clusterpop.siic13b.mongodb.net/?retryWrites=true&w=majority&appName=ClusterPop",
     ),
     "frequently_bought",
   ),

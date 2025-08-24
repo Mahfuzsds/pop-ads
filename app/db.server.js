@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const MONGODB_URI =
-  "mongodb+srv://itssonicx:Fn5U4lZ1QDPgUfhD@popcluster.e0deehd.mongodb.net/?retryWrites=true&w=majority&appName=PopCluster";
+  "mongodb+srv://superuser:khuljasimsim@clusterpop.siic13b.mongodb.net/?retryWrites=true&w=majority&appName=ClusterPop";
 
 // = = = = = = = = = = = = Adding billing table on mongodb = = = = = = = = = = = = //
 const billingSchema = new mongoose.Schema({
