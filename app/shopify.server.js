@@ -30,7 +30,7 @@ const shopify = shopifyApp({
     new URL(
       "mongodb+srv://superuser:khuljasimsim@clusterpop.siic13b.mongodb.net/?retryWrites=true&w=majority&appName=ClusterPop",
     ),
-    "frequently_bought",
+    "popyads",
   ),
   distribution: AppDistribution.AppStore,
   restResources,
