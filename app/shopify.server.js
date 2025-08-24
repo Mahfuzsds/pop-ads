@@ -27,7 +27,9 @@ const shopify = shopifyApp({
   appUrl: process.env.SHOPIFY_APP_URL || "",
   authPathPrefix: "/auth",
   sessionStorage: new MongoDBSessionStorage(
-    new URL("mongodb://localhost:27017/frequently_bought"),
+    new URL(
+      "mongodb+srv://itssonicx:Fn5U4lZ1QDPgUfhD@popcluster.e0deehd.mongodb.net/?retryWrites=true&w=majority&appName=PopCluster",
+    ),
     "frequently_bought",
   ),
   distribution: AppDistribution.AppStore,
